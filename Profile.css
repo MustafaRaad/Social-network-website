@@ -1,0 +1,84 @@
+body {
+  background-color: #f9f9f9;
+}
+
+main {
+  margin: 2rem auto;
+  padding: 2rem;
+  flex-direction: row;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  background: white;
+  border-radius: 10px;
+}
+.UserBanner {
+  background-color: #f7f7f7;
+  border-radius: 15px;
+  margin: 0 0 1rem 0;
+  padding: 3rem 3rem 3rem 5rem;
+  align-items: center;
+}
+.UserBanner h2 {
+  margin-left: 2rem;
+}
+.UserBanner .avatar img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  display: flex;
+}
+aside .asideSection {
+  margin: 2rem auto;
+  padding: 0.5rem 2rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  background: white;
+  border-radius: 10px;
+}
+.post {
+  margin: 2rem 0;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  background: white;
+  border-radius: 10px;
+}
+.post .avatar img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  display: flex;
+}
+
+main header {
+  margin: 1rem;
+  display: flex;
+}
+header h2 {
+  font-size: 20pt;
+  font-weight: bold;
+  align-self: center;
+}
+.post header h2 {
+  margin-left: 2rem;
+}
+
+main article {
+  margin: 1rem;
+}
+.imgs img {
+  border-radius: 15px;
+  padding: 0.5rem;
+}
+@media (max-width: 768px) {
+  main {
+    width: fit-content;
+  }
+  aside {
+    min-inline-size: fit-content;
+  }
+  .post {
+    min-inline-size: fit-content;
+  }
+}

@@ -1,0 +1,55 @@
+body{
+  background-color: #f9f9f9;
+}
+.posting {
+  padding: 1rem;
+  display: flex;
+}
+.posting textarea{
+    width: 80%;
+    margin: 1rem auto;
+}
+.posting button{
+      align-self: center;
+}
+main {
+  margin: 2rem auto;
+  padding: 3rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  background: white;
+  border-radius: 10px;
+}
+.post {
+  margin: 0 0 2rem 0;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  background: white;
+  border-radius: 10px;
+}
+.avatar img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  display: flex;
+}
+
+main header {
+  margin: 1rem;
+  display: flex;
+}
+header h2 {
+  margin-left: 2rem;
+  font-size: 20pt;
+  font-weight: bold;
+  align-self: center;
+}
+
+main article {
+  margin: 1rem;
+}
+.imgs img{
+    border-radius: 15px;
+    padding: 0.5rem;
+}

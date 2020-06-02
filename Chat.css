@@ -1,0 +1,97 @@
+body {
+  background-color: #f9f9f9;
+}
+
+main {
+  margin: 2rem auto;
+  padding: 2rem;
+  flex-direction: row;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  background: white;
+  border-radius: 10px;
+}
+.chatUser {
+  border-radius: 10px;
+  align-items: center;
+  display: flex;
+  padding: 0.5rem;
+  margin: 1rem auto;
+}
+.selected {
+  background-color: #f7f7f7;
+}
+.chatUser h2 {
+  margin-left: 2rem;
+}
+.chatUser .avatar img {
+  width: 3em;
+  height: 3rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  display: flex;
+}
+aside {
+  margin: 1rem auto;
+  padding: 0.5rem 2rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  background: white;
+  border-radius: 10px;
+}
+.chatPanel {
+  margin: 1rem 0;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+.chatPanel .avatar img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  display: flex;
+}
+
+.chatPanel header {
+  margin: 1rem;
+  display: flex;
+}
+
+header h2 {
+  font-size: 18pt;
+  font-weight: bold;
+  align-self: center;
+}
+.chatPanel header h2 {
+  margin-left: 2rem;
+}
+.chatPanel .send{
+    display: flex;
+}
+.send input{
+    margin: auto 1rem;
+}
+
+main article {
+  margin: 1rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.imgs img {
+  border-radius: 15px;
+  padding: 0.5rem;
+}
+@media (max-width: 768px) {
+  main {
+    width: fit-content;
+  }
+  aside {
+    min-inline-size: fit-content;
+  }
+  .post {
+    min-inline-size: fit-content;
+  }
+}
