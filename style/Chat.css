@@ -1,7 +1,13 @@
 body {
   background-color: #f9f9f9;
 }
-
+nav {
+  font-size: 15pt;
+}
+nav i {
+  align-self: center;
+  margin: auto 1rem;
+}
 main {
   margin: 2rem auto;
   padding: 2rem;
@@ -67,19 +73,28 @@ header h2 {
 .chatPanel header h2 {
   margin-left: 2rem;
 }
-.chatPanel .send{
-    display: flex;
+.chatPanel .send {
+  display: flex;
 }
-.send input{
-    margin: auto 1rem;
+.send input {
+  margin: auto 1rem;
 }
 
-main article {
+main .Reciever {
   margin: 1rem;
-  background-color: white;
+  background-color: #ffd3d3;
   padding: 1rem;
   border-radius: 10px;
+  margin-right: 5rem;
 }
+main .Sender {
+  margin: 1rem;
+  background-color: #c1f1e4;
+  padding: 1rem;
+  border-radius: 10px;
+    margin-left: 5rem;
+}
+
 .imgs img {
   border-radius: 15px;
   padding: 0.5rem;

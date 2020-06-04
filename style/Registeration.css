@@ -1,0 +1,36 @@
+body {
+  background-color: #f9f9f9;
+}
+nav{
+    font-size: 15pt;
+  }
+  nav a,i{
+  margin: auto 1rem;
+  align-self: center;
+}
+.intro{
+    margin: 2rem 4rem;
+    text-align: center;
+}
+.modal{
+    top: 8rem;
+}
+main {
+  margin: 2rem auto;
+  padding: 3rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  background: white;
+  border-radius: 10px;
+}
+
+main header {
+  margin: 1rem;
+  display: flex;
+}
+header h2 {
+  font-size: 20pt;
+  font-weight: bold;
+  align-self: center;
+  margin-bottom:2rem;
+
+}

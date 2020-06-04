@@ -1,16 +1,23 @@
-body{
+body {
   background-color: #f9f9f9;
+}
+nav{
+    font-size: 15pt;
+}
+nav i {
+  align-self: center;
+  margin: auto 1rem;
 }
 .posting {
   padding: 1rem;
   display: flex;
 }
-.posting textarea{
-    width: 80%;
-    margin: 1rem auto;
+.posting textarea {
+  width: 80%;
+  margin: 1rem auto;
 }
-.posting button{
-      align-self: center;
+.posting button {
+  align-self: center;
 }
 main {
   margin: 2rem auto;
@@ -49,7 +56,7 @@ header h2 {
 main article {
   margin: 1rem;
 }
-.imgs img{
-    border-radius: 15px;
-    padding: 0.5rem;
+.imgs img {
+  border-radius: 15px;
+  padding: 0.5rem;
 }

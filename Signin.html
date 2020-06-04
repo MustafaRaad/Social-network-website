@@ -11,23 +11,13 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
         integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style/Settings.css">
-    <title>Settings</title>
+    <link rel="stylesheet" href="./style/Signin.css">
+    <title>IQ-Social</title>
 </head>
 
 <body>
     <!-- ------------------------------------------------- Nav ------------------------------------------------- -->
     <nav class="navbar navbar-expand-md navbar-light bg-light ">
-        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2 ">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="HomePage.html"><i class="fas fa-home"></i>Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="Profile.html"><i class="fas fa-user"></i>Profile</a>
-                </li>
-            </ul>
-        </div>
         <div class="mx-auto order-0">
             <a class="navbar-brand mx-auto"><strong>IQ Social</strong></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
@@ -36,61 +26,57 @@
         </div>
         <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
             <ul class="navbar-nav ml-auto">
-                <!-- <li class="nav-item">
-                        <a class="nav-link" href="AdminView.html">Admin Panel</a>
-                        </li> -->
                 <li class="nav-item">
-                    <a class="nav-link" href="Chat.html"><i class="fas fa-comments"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="Settings.html"><i class="fas fa-cog"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Registeration.html"><i class="fas fa-sign-out-alt"></i></a>
+                    <a class="nav-link" href="Registeration.html">Registeration<i class="fas fa-sign-in-alt"></i></a>
                 </li>
             </ul>
         </div>
     </nav>
     <!-- ------------------------------------------------- Nav ------------------------------------------------- -->
     <div class="container">
+        <div class="intro">
+            Social media network to communicate with others made for Universty of Information technology and
+            communications
+        </div>
         <main>
-            <div class="setting">
-                <header class="avatar">
-                    <i class="fas fa-user"></i>
-                    <h2>
-                        <a href="Edit.html">
-                            Name
+            <header>
+                <h2>
+                    Sign in
+                </h2>
+            </header>
+            <!-- ------------------------------------------------- form ------------------------------------------------- -->
+
+            <form action="HomePage.html" method="POST">
+                <div class="form-group row">
+                    <label for="inputEmail" class="col-sm-2 col-form-label" name="">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label" name="">Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-3 footer">
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-3">
+                        <a href="Registeration.html">
+                            Create new account
                         </a>
-                    </h2>
-                </header>
-            </div>
-            <div class="setting">
-                <header class="avatar">
-                    <i class="fas fa-envelope"></i>
-                    <h2><a href="Edit.html">
-                            Email
-                        </a></h2>
-                </header>
-            </div>
-            <div class="setting">
-                <header class="avatar">
-                    <i class="fas fa-key"></i>
-                    <h2><a href="Edit.html">
-                            Password
-                        </a></h2>
-                </header>
-            </div>
-            <div class="setting">
-                <header class="avatar">
-                    <i class="fas fa-birthday-cake"></i>
-                    <h2><a href="Edit.html">
-                            Birthdate
-                        </a></h2>
-                </header>
-            </div>
+                    </div>
+                </div>
+            </form>
+            <!-- ------------------------------------------------- form ------------------------------------------------- -->
+
         </main>
     </div>
-
+    <!-- ------------------------------------------------------------------------------------------------- -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

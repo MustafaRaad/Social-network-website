@@ -9,7 +9,9 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="Chat.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style/Chat.css">
   <title>Chat</title>
 </head>
 
@@ -19,10 +21,10 @@
     <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2 ">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="HomePage.html">Home</a>
+          <a class="nav-link" href="HomePage.html"><i class="fas fa-home"></i>Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Profile.html">Profile</a>
+          <a class="nav-link " href="Profile.html"><i class="fas fa-user"></i>Profile</a>
         </li>
       </ul>
     </div>
@@ -35,16 +37,16 @@
     <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
       <ul class="navbar-nav ml-auto">
         <!-- <li class="nav-item">
-            <a class="nav-link">Admin Panel</a>
-          </li> -->
+          <a class="nav-link" href="AdminView.html">Admin Panel</a>
+        </li> -->
         <li class="nav-item">
-          <a class="nav-link active" href="Chat.html">chat <i class="fas fa-sign-in-alt"></i></a>
+          <a class="nav-link active" href="Chat.html"><i class="fas fa-comments"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Settings.html">Settings <i class="fas fa-sign-out-alt"></i></a>
+          <a class="nav-link" href="Settings.html"><i class="fas fa-cog"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Registeration.html">Sign out</a>
+          <a class="nav-link" href="Registeration.html"><i class="fas fa-sign-out-alt"></i></a>
         </li>
       </ul>
     </div>
@@ -82,15 +84,21 @@
               <img src="https://www.pavilionweb.com/wp-content/uploads/2017/03/man-300x300.png" class="card-img-top">
               <h2>User Name 1</h2>
             </header>
-            <article>
+            <article class="Reciever">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo minima libero, id impedit sequi
               distinctio
               quod aut, inventore suscipit voluptatum tempore cumque veritatis odio non reiciendis placeat fuga. Vero,
               possimus?
             </article>
+                        <article class="Sender">
+                          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo minima libero, id impedit sequi
+                          distinctio
+                          quod aut, inventore suscipit voluptatum tempore cumque veritatis odio non reiciendis placeat fuga. Vero,
+                          possimus?
+                        </article>
             <div class="send">
-                <input type="text" class="form-control" placeholder="type...">
-                <button type="submit" class="btn btn-primary">Send</button>
+              <input type="text" class="form-control" placeholder="type...">
+              <button type="submit" class="btn btn-primary">Send</button>
             </div>
           </div>
 
