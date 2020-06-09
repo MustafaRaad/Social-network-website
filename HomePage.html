@@ -55,10 +55,13 @@
 
   <div class="container posts">
     <main>
-      <div class="posting">
-        <textarea class="form-control " placeholder="Write your Post" required></textarea>
-        <button type="submit" class="btn btn-lg btn-primary">Post</button>
-      </div>
+      <form action="">
+        <div class="posting align-items-center row">
+          <textarea class="form-control col-8" placeholder="Write your Post" required></textarea>
+          <input type="file" id="myFile" class="col-3 btn">
+          <button type="submit" class="col-1 btn btn-lg btn-primary">Post</button>
+        </div>
+      </form>
       <div class="post">
         <header class="avatar">
           <img src="https://www.pavilionweb.com/wp-content/uploads/2017/03/man-300x300.png" class="card-img-top">
@@ -101,6 +104,11 @@
 
 
   <!-- ------------------------------------------------- JS ------------------------------------------------- -->
+  <script>
+    function FileUpload() {
+      document.getElementById("myFile").accept = "video/*,image/*";
+    }
+  </script>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

@@ -1,8 +1,8 @@
 body {
   background-color: #f9f9f9;
 }
-nav{
-    font-size: 15pt;
+nav {
+  font-size: 15pt;
 }
 nav i {
   align-self: center;
@@ -13,11 +13,17 @@ nav i {
   display: flex;
 }
 .posting textarea {
-  width: 80%;
+  /* width: 80%; */
   margin: 1rem auto;
 }
 .posting button {
   align-self: center;
+}
+.posting i {
+  font-size: 20pt;
+  align-self: center;
+  writing-mode: vertical-lr;
+  cursor: pointer;
 }
 main {
   margin: 2rem auto;
