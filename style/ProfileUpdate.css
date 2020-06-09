@@ -1,0 +1,46 @@
+body {
+  background-color: #f9f9f9;
+}
+nav{
+    font-size: 15pt;
+}
+nav i {
+  align-self: center;
+  margin: auto 1rem;
+}
+main {
+  margin: 2rem;
+  padding: 3rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  background: white;
+  border-radius: 10px;
+}
+
+main header {
+  margin: 0.5rem auto;
+  display: flex;
+}
+header h2 {
+  font-size: 20pt;
+  font-weight: bold;
+  align-self: center;
+}
+main i{
+    font-size: 20pt;
+    top:0;
+    margin-bottom: 3rem;
+}
+
+main article {
+  margin: 1rem;
+}
+a {
+  text-decoration: none;
+  color: #303030;
+  transition: 0.3s;
+}
+a:hover {
+  color: #757575;
+  text-decoration: none;
+  outline: thin;
+}

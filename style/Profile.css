@@ -1,8 +1,8 @@
 body {
   background-color: #f9f9f9;
 }
-nav{
-    font-size: 15pt;
+nav {
+  font-size: 15pt;
 }
 nav i {
   align-self: center;
@@ -58,7 +58,7 @@ aside .asideSection {
 }
 
 main header {
-  margin: 1rem;
+  margin: 0.5rem auto;
   display: flex;
 }
 header h2 {
@@ -68,6 +68,16 @@ header h2 {
 }
 .post header h2 {
   margin-left: 2rem;
+}
+.editIcon {
+  margin: 0;
+  text-align: right;
+}
+.editIcon a {
+  color: black;
+}
+.editIcon a:hover {
+  color: blue;
 }
 
 main article {

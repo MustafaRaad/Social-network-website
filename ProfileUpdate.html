@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/ProfileUpdate.css">
+    <title>Profile update</title>
+</head>
+
+<body>
+    <!-- ------------------------------------------------- Nav ------------------------------------------------- -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light ">
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2 ">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="HomePage.html"><i class="fas fa-home"></i>Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="Profile.html"><i class="fas fa-user"></i>Profile</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mx-auto order-0">
+            <a class="navbar-brand mx-auto"><strong>IQ Social</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <!-- <li class="nav-item">
+                        <a class="nav-link" href="AdminView.html">Admin Panel</a>
+                        </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="Chat.html"><i class="fas fa-comments"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="Settings.html"><i class="fas fa-cog"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Registeration.html"><i class="fas fa-sign-out-alt"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- ------------------------------------------------- Nav ------------------------------------------------- -->
+    <div class="container">
+        <main>
+            <div class="back"><a href="Profile.html">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+            </div>
+            <!-- ------------------------------------------------- form ------------------------------------------------- -->
+            <form method="POST" onsubmit="return validate(this)">
+                <header>
+                    <h2>Hobbies</h2>
+                </header>
+                <div class="form-group row">
+                    <div class="col-10">
+                        <input type="text" class="form-control" name="" placeholder="Old name" required>
+                    </div>
+                </div>
+                <div class="form-group row" id="newlinktpl">
+                    <div class="col-10" id="newlink">
+                        <input type="text" class="form-control" name="feedurl[]" placeholder="Old name" required>
+                    </div>
+                </div>
+                <div class="form-group row d-flex justify-content-end">
+                    <div class="col-" id="addnew">
+                        <button type="submit" class="btn btn-success" onclick="javascript:add_feed()">+</button>
+                        <button type="submit" class="btn btn-primary" id="success" name="submit1">Update</button>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Template. This whole data will be added directly to working form above -->
+            <div id="newlinktpl" style="display:none">
+                <div class="feed">
+                    <input type="text" name="feedurl[]" value="" size="50">
+                </div>
+            </div>
+            <!-- ---------------------------------------------------------for rami------------------------- -->
+            <!-- <?php
+            if(count($_POST))
+            {
+            	$len = count($_POST['linkurl']);
+            	for ($i=0; $i < $len; $i++)
+            	{
+            		echo $_POST['linkurl'][$i] . '<br>';
+            		echo $_POST['linkdesc'][$i] . '<br>';
+            	}
+            }
+            ?> -->
+
+            <!-- ------------------------------------------------- form ------------------------------------------------- -->
+            <div role="alert " id="message">
+            </div>
+        </main>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            function addInput() {
+                var x = document.createElement("INPUT");
+                x.setAttribute("type", "text");
+                x.setAttribute("class", "form-control");
+                document.body.appendChild(x);
+            }
+            $(document).ready(function () {
+                $('#success').click(function (e) {
+                    inp1 = document.getElementById("inputName").value;
+                    inp2 = document.getElementById("inputName").value;
+                    if (inp1.length && inp2.length > 3) {
+                        e.preventDefault()
+                        $('#message').html('<div class="alert alert-success show">(Name) Updated Seccessfuly!</div>');
+                    }
+                })
+            });
+
+            // ele.setAttribute("class", "form-control");
+            // ele.setAttribute("type", "text");
+            function validate(frm) {
+                var ele = frm.elements['feedurl[]'];
+                if (!ele.length) {
+                    alert(ele.value);
+                }
+                for (var i = 0; i < ele.length; i++) {
+                    alert(ele[i].value);
+                }
+                return true;
+            }
+            function add_feed() {
+                var div1 = document.createElement('div');
+                // Get template data
+                div1.innerHTML = document.getElementById('newlinktpl').innerHTML;
+                // append to our form, so that template data
+                //become part of form
+
+                document.getElementById('newlink').appendChild(div1);
+            }
+        </script>
+</body>
+
+</html>
