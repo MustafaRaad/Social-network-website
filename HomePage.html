@@ -76,23 +76,32 @@
               alt="...">
           </div>
         </article>
+
+        <div class="interaction">
+          <ul class="row text-center">
+            <li class="col-4">
+              <button id="Lbtn" class="btn btn-light" onclick="like()">
+                <i class="fas fa-thumbs-up"></i>
+                Like
+              </button>
+            </li>
+            <li class="col-4">
+              <a href="Post.html" role="button" class="btn btn-light" >
+                <i class="fas fa-comment-dots"></i>
+                Comment
+              </a>
+            </li>
+            <li class="col-4">
+              <button class="btn btn-light">
+                <i class="fas fa-share"></i>
+                Share
+              </button>
+            </li>
+          </ul>
+        </div>
+       
       </div>
 
-      <div class="post">
-        <header class="avatar">
-          <img src="https://www.pavilionweb.com/wp-content/uploads/2017/03/man-300x300.png" class="card-img-top">
-          <h2>Title</h2>
-        </header>
-        <article>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo minima libero, id impedit sequi distinctio
-          quod aut, inventore suscipit voluptatum tempore cumque veritatis odio non reiciendis placeat fuga. Vero,
-          possimus?
-          <div class="imgs">
-            <img src="https://raminahmadi.com/wp-content/uploads/2019/02/null-500x259.png" class="card-img-top"
-              alt="...">
-          </div>
-        </article>
-      </div>
 
     </main>
   </div>
@@ -107,6 +116,17 @@
   <script>
     function FileUpload() {
       document.getElementById("myFile").accept = "video/*,image/*";
+    }
+    let liked = false;
+    function like() {
+      let like_effect = document.getElementById("Lbtn");
+      liked = !liked
+      if (liked) {
+        like_effect.className = like_effect.className.replace(/\bbtn-light\b/g, "btn-primary");
+      }
+      else {
+        like_effect.className = like_effect.className.replace(/\bbtn-primary\b/g, "btn-light");
+      }
     }
   </script>
   <!-- Optional JavaScript -->

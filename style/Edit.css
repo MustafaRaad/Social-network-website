@@ -20,7 +20,7 @@ main header {
   display: flex;
   margin-left: 2rem;
 }
-main i{
+.back{
     font-size: 20pt;
     top:0;
     margin-bottom: 3rem;

@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/Post.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <!-- ------------------------------------------------- Nav ------------------------------------------------- -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light ">
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2 ">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="HomePage.html"><i class="fas fa-home"></i>Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="Profile.html"><i class="fas fa-user"></i>Profile</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mx-auto order-0">
+            <a class="navbar-brand mx-auto"><strong>IQ Social</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <!-- <li class="nav-item">
+          <a class="nav-link">Admin Panel</a>
+        </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="Chat.html"><i class="fas fa-comments"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Settings.html"><i class="fas fa-cog"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Registeration.html"><i class="fas fa-sign-out-alt"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- ------------------------------------------------- Nav ------------------------------------------------- -->
+
+    <div class="container posts">
+        <main>
+            <div class="back"><a href="HomePage.html">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+            </div>
+            <header class="avatar">
+                <img src="https://www.pavilionweb.com/wp-content/uploads/2017/03/man-300x300.png" class="card-img-top">
+                <h2>Title</h2>
+            </header>
+            <article>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo minima libero, id impedit sequi
+                distinctio
+                quod aut, inventore suscipit voluptatum tempore cumque veritatis odio non reiciendis placeat fuga.
+                Vero,
+                possimus?
+                <div class="imgs">
+                    <img src="https://raminahmadi.com/wp-content/uploads/2019/02/null-500x259.png" class="card-img-top"
+                        alt="...">
+                </div>
+            </article>
+
+            <div class="interaction">
+                <ul class="row text-center">
+                    <li class="col-4">
+                        <button id="Lbtn" class="btn btn-light" onclick="like()">
+                            <i class="fas fa-thumbs-up"></i>
+                            Like
+                        </button>
+                    </li>
+                    <li class="col-4">
+                        <a href="#comm" role="button" class="btn btn-light">
+                            <i class="fas fa-comment-dots"></i>
+                            Comment
+                        </a>
+                    </li>
+                    <li class="col-4">
+                        <button class="btn btn-light">
+                            <i class="fas fa-share"></i>
+                            Share
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="comments">
+
+                <form action="" >
+                    <div class="commenting row d-flex justify-content-between">
+                        <input type="text" class="form-control col-10" placeholder="Write your Comment" id="comm"
+                            required>
+                        <button type="submit" class=" btn btn-info">Comment</button>
+                    </div>
+                </form>
+                <div class="comment">
+                        <img src="https://www.pavilionweb.com/wp-content/uploads/2017/03/man-300x300.png" class="comm-avatar">
+                        <p>Hello World</p>
+                </div>
+                <div class="comment">
+                    <img src="https://www.pavilionweb.com/wp-content/uploads/2017/03/man-300x300.png" class="comm-avatar">
+                    <p>Hello World</p>
+                </div>
+            </div>
+    </div>
+
+
+    </main>
+    </div>
+
+
+
+
+
+
+
+    <!-- ------------------------------------------------- JS ------------------------------------------------- -->
+    <script>
+        function FileUpload() {
+            document.getElementById("myFile").accept = "video/*,image/*";
+        }
+        let liked = false;
+        function like() {
+            let like_effect = document.getElementById("Lbtn");
+            liked = !liked
+            if (liked) {
+                like_effect.className = like_effect.className.replace(/\bbtn-light\b/g, "btn-primary");
+            }
+            else {
+                like_effect.className = like_effect.className.replace(/\bbtn-primary\b/g, "btn-light");
+            }
+        }
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

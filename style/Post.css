@@ -8,23 +8,13 @@ nav i {
   align-self: center;
   margin: auto 1rem;
 }
-.posting {
-  padding: 1rem;
-  display: flex;
-}
-.posting textarea {
-  /* width: 80%; */
-  margin: 1rem auto;
-}
-.posting button {
-  align-self: center;
-}
-.posting i {
+.back {
   font-size: 20pt;
-  align-self: center;
-  writing-mode: vertical-lr;
-  cursor: pointer;
+  top: 0;
+  margin-bottom: 3rem;
+  color: black;
 }
+
 main {
   margin: 2rem auto;
   padding: 3rem;
@@ -42,10 +32,18 @@ header h2 {
   font-weight: bold;
   align-self: center;
 }
-
+.avatar img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  display: flex;
+}
 main article {
   margin: 1rem;
 }
+
 .imgs img {
   border-radius: 15px;
   padding: 0.5rem;
@@ -58,14 +56,6 @@ main article {
   background: white;
   border-radius: 10px;
 }
-.avatar img {
-  width: 5rem;
-  height: 5rem;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 1px solid #ccc;
-  display: flex;
-}
 .interaction ul {
   list-style-type: none;
   margin: 1rem;
@@ -74,9 +64,38 @@ main article {
 .interaction li {
   display: inline;
 }
-.interaction button,a {
+.interaction button,
+a {
   width: inherit;
 }
 .interaction i {
   margin: auto 1rem;
+}
+.comments {
+  margin: auto auto;
+  border-radius: 10px;
+  width: 90%;
+}
+.commenting {
+margin: 1rem auto;
+}
+.comment {
+  margin: 0.3rem 0.3rem;
+  background-color: #c1f1e4;
+  border: #ccc;
+ border-style: solid;
+  border-radius: 5px;
+  display: flex;
+  padding: 15px;
+      align-items: center
+}
+.comment p {
+        margin: auto 1rem;
+}
+.comm-avatar {
+  width: 2em;
+  height: 2rem;
+  border-radius: 50%;
+  object-fit: cover;
+  display: flex;
 }
