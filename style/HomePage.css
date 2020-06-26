@@ -80,3 +80,12 @@ main article {
 .interaction i {
   margin: auto 1rem;
 }
+@media (max-width: 768px) {
+  main {
+    width: fit-content;
+  }
+
+  .post {
+    min-inline-size: fit-content;
+  }
+}
